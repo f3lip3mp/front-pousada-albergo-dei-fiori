@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    background: #3D5541;
+    overflow: hidden;
+}
+
+.header-menu{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.wrap-menu-bar{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+
+.menu-bar{
+    width: 82%;
+    display: flex;
+    gap: 35px;
+    background: #E3E4DB;
+    border-radius: 23px;
+    margin: auto;
+}
+
+.btns{
+    position: relative;
+    text-decoration: none;
+    color: #1E1D1D;
+    font-family: 'Lexend', sans-serif;
+    padding: 15px;
+}
+
+.btns:hover{
+    border-radius: 23px;
+    background: #f3f3f2;
+}
+
+.wrap-logo{
+    width: 10%;
+}
+
+.logo{
+    margin: 20px;
+    width: 90px;
+}
+
+.container-register{
+    width: 55%;
+    float: right;
+}
+
+.tittle-register{
+    padding: 25px 0 5px 0;
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+}
+
+.wrap-form{
+    width: 600px;
+    height: 750px;
+    background: #E3E4DB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.wrap-input-register {
+    background: #fff;
+    position: relative;
+    border-radius: 15px;
+    margin: 25px 0 30px 0;
+}
+
+.input-register {
+    font-size: 15px;
+    color: #1E1D1D;
+    line-height: 1.2;
+    border: none;
+    display: block;
+    width: 400px;
+    height: 48px;
+    background-color: transparent;
+    padding: 0 15px 0 15px;
+}
+
+.focus-input-register {
+    font-family: 'Lexend', sans-serif;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    color: #adadad;
+}
+
+.focus-input-register::after{
+    font-size: 1.05rem;
+    font-weight:bold;
+    color: #1E1D1D;
+    line-height: 0.8;
+    content: attr(data-placeholder);
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 17px;
+    left: 7px;
+
+    padding-left: 5px;
+
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;    
+   
+}
+
+.input-register:focus {
+    outline: 0;
+}
+
+.input-register:focus + .focus-input-register::after {
+    top: -17px;
+}
+
+.input-register:focus + .focus-input-register::before {
+    width: 100%;
+}
+
+.has-val + .focus-input-register::after{
+    top: -17px;
+}
+
+.has-val + .focus-input-register::before{
+    width: 100%;
+}
+
+
+.focus-input-register-born{
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.05rem;
+    font-weight:bold;
+    color: #1E1D1D;
+    top: -21px;
+    left: 3.5px;
+    padding-left: 5px;
+    display: block;
+    position: absolute;
+}
+
+
+.container-register-form-btn{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+.register-form-btn{
+    border: none;
+    background: transparent;
+
+}
+
+.register-form-btn img{
+    border-radius: 20px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.text-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    font-family: 'Lexend', sans-serif;
+    margin: 15px 0 25px 0;
+}
+
+
+/***********
+***SLIDER***
+************/
+
+.container-slider{
+    width: 45%;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
+.wrap-slider{
+    height: 620px;
+    width: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 1.5px 1.5px 8px 1px rgba(212, 210, 210, 0.75);
+    margin-top: 3%;
+
+}
+
+.wrap-slider .slide img{
+    height: 100%;
+    width: 100%;
+}
+
+.navigation{
+    z-index: 3;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 280px;
+    margin-right: 440px;
+}
+
+.bar{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.bar:hover{
+    background-color: #fff;
+}
+
+.input-radio{
+    display: none;
+}
+
+.slides{
+    width: 300%;
+    height: 100%;
+}
+
+.slide{
+    width: 33.3%;
+    transition: .6s;
+}
+
+#slide1:checked ~ .s1{
+    margin: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-bottom: -46%;
+}
+
+#slide3:checked ~ .s1{
+    margin-bottom: -92%;
+}
+
+
+
+
+

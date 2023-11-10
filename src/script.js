@@ -1,11 +1,12 @@
-let contador = 1;
+//
+//let contador = 1;
 
-setInterval(() => {
-    document.getElementById('slide' + contador).checked = true;
-    contador++;
+//setInterval( function(){
+//    document.getElementById('slide' + contador).checked = true;
+//    contador ++
+    
+ //   if (contador > 3){
+ //       contador = 1;
+ //   }
 
-    if(contador > 3){
-        contador = 1;
-    }
-
-}, 3000);
+//},3000)

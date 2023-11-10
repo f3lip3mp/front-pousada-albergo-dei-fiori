@@ -50,7 +50,7 @@
 
 .custom-date-range-picker {
     position: absolute;
-    top: 45%; /* Ajuste conforme necessário para a distância do topo */
+    top: 30%; /* Ajuste conforme necessário para a distância do topo */
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000; /* Certifique-se de que o calendário está acima de outros elementos */
